@@ -126,7 +126,7 @@ func QueryBlockWithTxsRequestHandlerFn(cliCtx context.CLIContext) http.HandlerFu
 			return
 		}
 
-		if fromBlockHeight >= latestBlockHeight {
+		if fromBlockHeight > latestBlockHeight {
 			rest.WriteErrorResponse(w, http.StatusNotFound, fmt.Sprintf("the block height does not exist. Requested: %d, Latest: %d", fromBlockHeight, latestBlockHeight))
 			return
 		}
