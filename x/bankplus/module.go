@@ -7,6 +7,6 @@ import (
 
 type AppModule struct {
 	bank.AppModule
-	//nolint:unused
+	//nolint:unused // this is whywhyhwy test... purpose only
 	bankKeeper bankkeeper.Keeper
 }
