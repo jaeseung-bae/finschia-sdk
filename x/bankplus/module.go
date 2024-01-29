@@ -7,6 +7,6 @@ import (
 
 type AppModule struct {
 	bank.AppModule
-
+	//nolint:unused
 	bankKeeper bankkeeper.Keeper
 }
