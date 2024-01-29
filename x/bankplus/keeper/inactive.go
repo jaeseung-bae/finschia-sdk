@@ -18,7 +18,7 @@ func inactiveAddrKey(addr sdk.AccAddress) []byte {
 
 // isStoredInactiveAddr checks if the address is stored or not as blocked address
 //
-//nolint:deadcode,unused
+//nolint:deadcode,unused why
 func (keeper BaseKeeper) isStoredInactiveAddr(ctx sdk.Context, address sdk.AccAddress) bool {
 	store := keeper.storeService.OpenKVStore(ctx)
 	bz, _ := store.Get(inactiveAddrKey(address))
