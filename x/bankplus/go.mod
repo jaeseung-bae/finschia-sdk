@@ -2,13 +2,12 @@ module github.com/Finschia/finschia-sdk/x/bankplus
 
 go 1.21
 
-
 require (
 	cosmossdk.io/core v0.12.0
 	cosmossdk.io/errors v1.0.1
 	cosmossdk.io/log v1.3.0
 	cosmossdk.io/store v1.0.2
-	github.com/cosmos/cosmos-sdk v0.0.0-00010101000000-000000000000
+	github.com/cosmos/cosmos-sdk v0.50.2
 	github.com/gogo/protobuf v1.3.2
 )
 
