@@ -1,14 +1,7 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/Finschia/finschia-sdk/x/collection-token/class"
-)
+import "fmt"
 
 func main() {
-	err := class.ValidateID("Aa")
-	if err != nil {
-		fmt.Println(err)
-	}
+	fmt.Println("release dep on unpublished module")
 }
