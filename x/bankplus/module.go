@@ -18,7 +18,6 @@ type AppModule struct {
 	bank.AppModule
 
 	bankKeeper bankkeeper.Keeper
-	//legacySubspace exported.Subspace
 }
 
 func NewAppModule(cdc codec.Codec, keeper bankkeeper.Keeper, accountKeeper accountkeeper.AccountKeeper) AppModule {
