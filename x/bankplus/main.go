@@ -1,4 +1,4 @@
-package bankplus
+package main
 
 import "fmt"
 
