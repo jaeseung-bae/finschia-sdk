@@ -110,7 +110,7 @@ func (keeper BaseKeeper) isInactiveAddr(addr sdk.AccAddress) bool {
 // SendCoins transfers amt coins from a sending account to a receiving account.
 // This is wrapped bank the `SendKeeper` interface of `bank` module,
 // and checks if `toAddr` is a inactiveAddr managed by the module.
-func (keeper BaseKeeper) SendCoins(ctx context.Context, fromAddr sdk.AccAddress, toAddr sdk.AccAddress, amt sdk.Coins) error {
+func (keeper BaseKeeper) SendCoins(ctx context.Context, fromAddr, toAddr sdk.AccAddress, amt sdk.Coins) error {
 	// if toAddr is smart contract, check the status of contract.
 	if keeper.isInactiveAddr(toAddr) {
 		return errorsmod.Wrapf(sdkerrors.ErrUnauthorized, "%s is not allowed to receive funds", toAddr)
