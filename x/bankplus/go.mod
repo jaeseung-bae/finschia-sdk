@@ -154,3 +154,5 @@ require (
 )
 
 replace github.com/cometbft/cometbft => github.com/Finschia/cometbft v0.0.0-20231127181424-2aacfbe9832d
+
+replace github.com/cosmos/cosmos-sdk => github.com/Finschia/cosmos-sdk v0.0.0-20231211060251-d8fb76d4c267
