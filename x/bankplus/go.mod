@@ -151,6 +151,4 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace (
-	github.com/cometbft/cometbft => github.com/Finschia/cometbft v0.0.0-20231127181424-2aacfbe9832d
-)
+replace github.com/cometbft/cometbft => github.com/Finschia/cometbft v0.0.0-20231127181424-2aacfbe9832d
